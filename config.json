@@ -1,0 +1,14 @@
+{
+	"name": "PigeonPosse Style",
+	"author": "Angelo from PigonPosse",
+	"authorUrl": "https://pigeonposse.com",
+	"builder": [ 
+		"legacy", 
+		"grapesjsbuilder"
+	],
+	"features": [
+		"page", 
+		"email", 
+		"form"
+	]
+}

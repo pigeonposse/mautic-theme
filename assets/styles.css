@@ -1,0 +1,241 @@
+/**
+ * ***********************************************************
+ * GENERAL 
+ * ***********************************************************
+ */
+body {
+    font-family: helvetica;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+/*    justify-content: center;*/
+    align-items: center;
+    text-align:center;
+	--pigeon-theme-color: #2866a6;
+	--pigeon-color: #111;
+	--pigeon-bg-color: #ffffff;
+	--pigeon-content-bg-color: ##ffffff;
+	--pigeon-input-bg-color: #f6f6f6;
+	--pigeon-input-border-color: #111;
+	--pigeon-input-color: #666666;
+	--pigeon-input-color-hover: #111;
+	--pigeon-btn-bg-color: #111;
+	--pigeon-quote-color:#666666;
+	/*height: 100vh;*/
+	background-color:var(--pigeon-bg-color);
+}
+.center {
+    text-align: center;
+    justify-content: center;
+}
+.end {
+    text-align: end;
+    justify-content: flex-end;
+}
+.start {
+    text-align: start;
+    justify-content: flex-start;
+}
+a {
+    color: var(--pigeon-theme-color);
+    font-style: italic;
+    text-decoration: auto;
+
+}
+
+/**
+ * ***********************************************************
+ * HEADER & FOOTER
+ * ***********************************************************
+ */
+.pigeon-header, .pigeon-footer {
+	margin: 40px auto;
+}
+
+.pigeon-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+/*    justify-content: center;*/
+    align-items: center;
+}
+
+.pigeon-header .title {
+	margin:5px;
+	font-weight: bold;
+	font-size: 35px;
+}
+.pigeon-footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.pigeon-footer .social-links a {
+	margin:10px;
+}
+.pigeon-footer .copy {
+	color:var(--pigeon-quote-color);
+	opacity:0.6;
+}
+
+.pigeon-footer div {
+	margin:5px;
+}
+
+/**
+ * ***********************************************************
+ * CONTENT 
+ * ***********************************************************
+ */
+.pigeon-content {
+	padding: 20px;
+	box-shadow: 0 5px 45px #0000002e;
+	background: var(--pigeon-content-bg-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 600px;
+}
+.pigeon-content .header-image{
+    height: 250px;
+    border-radius: 10px;
+}
+/**
+ * ***********************************************************
+ * FORM 
+ * ***********************************************************
+ */
+.pigeon-content-form {
+    max-width: 1000px;
+    margin: auto;
+}
+/**
+ * ***********************************************************
+ * INPUTS 
+ * ***********************************************************
+ */
+textarea, select, input {
+    padding: 0.7em 1em !important;
+    background: var(--pigeon-input-bg-color) !important;
+    border-radius: 15px !important;
+    border-width: 0 0 3px 0 !important;
+    border-color: var(--pigeon-input-border-color) !important;
+    width: 100% !important;
+    color: var(--pigeon-input-color) !important;
+}
+:focus-visible {
+	color: var(--pigeon-input-color-hover) !important;
+	outline: none !important;
+	border-color: var(--pigeon-theme-color) !important;
+}
+textarea {
+    font-family: helvetica;
+}
+/**
+ * checkboxes 
+ */
+input[type="checkbox"],
+input[type="radio"]{
+    width: fit-content !important;
+    margin: 5px 10px 5px 0px;
+}
+/**
+ * btns 
+ */
+input[type="button"],
+button,
+.pigeon-btn, 
+.button {
+  	padding: 10px 40px !important;
+	background-color: var(--pigeon-theme-color) !important;
+    border-radius: 20px !important;
+    color: white !important;
+	font-weight: bold;
+    border-width: 0 !important;
+}
+button[data-mautic-form-pagebreak-button="prev"],
+button[data-mautic-form-pagebreak-button="next"]{
+	background-color: var(--pigeon-btn-bg-color) !important;
+}
+button[data-mautic-form-pagebreak-button="next"]{
+	float: right;
+}
+/**
+ * ***********************************************************
+ * BLOCKQUOTES 
+ * ***********************************************************
+ */
+blockquote {
+  color: var(--pigeon-quote-color);
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: var(--pigeon-quote-color);
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.15em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+/**
+ * ***********************************************************
+ * IFRAMES 
+ * ***********************************************************
+ */
+iframe {
+	border-radius: 10px;
+}
+/**
+ * ***********************************************************
+ * IMAGES 
+ * ***********************************************************
+ */
+.pigeon-image {
+	border-radius: 10px;
+}
+/**
+ * ***********************************************************
+ * RESPONSIVE
+ * ***********************************************************
+ */
+@media only screen and (max-width: 600px) {
+	.pigeon-content,
+	.pigeon-header, 
+	.pigeon-footer {
+		width: 400px;
+	}
+	.pigeon-header .title {
+		font-size: 30px;
+	}
+	.pigeon-content .header-image{
+	    height: 150px;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.pigeon-content,
+	.pigeon-header, 
+	.pigeon-footer {
+		width: 300px;
+	}
+}
+@media only screen and (max-width: 300px) {
+	.pigeon-content,
+	.pigeon-header, 
+	.pigeon-footer {
+		width: 200px;
+	}
+}
+/*************************************************************/
+/*************************************************************/
+/*************************************************************/

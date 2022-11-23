@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {# Title and description #}
+        {% if page is defined %}
+        	<title>{pagetitle}</title>
+        	<meta name="description" content="{pagemetadescription}">
+        {% endif %}
+        {# spigeon theme styles #}
+        <link class="reea-styles" rel="stylesheet" type="text/css" href="{{getAssetUrl('themes/'~template~'/assets/styles.css')}}">
+        {# stylesheets #}
+{#         {% block stylesheets %}{% endblock %}
+        {{ outputHeadDeclarations() }} #}
+    </head>
+    <body>
+    	{# body contents #}
+        {{ outputScripts('bodyOpen') }}
+        {% block content %}{% endblock %}
+        {{ outputScripts('bodyClose') }}
+    </body>
+</html>

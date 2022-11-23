@@ -1,0 +1,30 @@
+{
+	"name": "pigeonposse/mautic-theme",
+	"description" : "A pigeonPosse theme for Mautic",
+	"type": "mautic-theme",
+	"keywords": ["mautic","theme"],
+	"extra": {
+		"install-directory-name": "pigeonposse"
+	},
+	"authors": [
+		{
+            "name": "PigeonPosse Team",
+            "email": "dev@pigeonposse.com",
+            "homepage": "https://pigeonposse.com",
+            "role": "Collective"
+		},
+		{
+            "name": "Angelo",
+            "email": "angelo@pigeonposse.com",
+            "homepage": "https://pigeonposse.com",
+            "role": "Developer"
+		}
+	],
+	"license": "LGPL-3",
+	"funding": [
+		{
+			"type": "other",
+			"url": "https://github.com/sponsors/PigeonPosse"
+		}
+	]
+}

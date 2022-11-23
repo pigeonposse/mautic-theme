@@ -1,0 +1,317 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <title>
+        {subject}
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+/**
+ * ***********************************************************
+ * GENERAL 
+ * ***********************************************************
+ */
+body {
+    font-family: helvetica;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+/*    justify-content: center;*/
+    align-items: center;
+    text-align:center;
+	--pigeon-theme-color: #351f53;
+	--pigeon-color: #111;
+	--pigeon-bg-color: #ffffff;
+	--pigeon-content-bg-color: ##ffffff;
+	--pigeon-input-bg-color: #f6f6f6;
+	--pigeon-input-border-color: #111;
+	--pigeon-input-color: #666666;
+	--pigeon-input-color-hover: #111;
+	--pigeon-btn-bg-color: #111;
+	--pigeon-quote-color:#666666;
+	/*height: 100vh;*/
+	background-color:var(--pigeon-bg-color);
+}
+.center {
+    text-align: center;
+    justify-content: center;
+}
+.end {
+    text-align: end;
+    justify-content: flex-end;
+}
+.start {
+    text-align: start;
+    justify-content: flex-start;
+}
+a {
+    color: var(--pigeon-theme-color);
+    font-style: italic;
+    text-decoration: auto;
+
+}
+
+/**
+ * ***********************************************************
+ * HEADER & FOOTER
+ * ***********************************************************
+ */
+.pigeon-header, .pigeon-footer {
+	margin: 40px auto;
+}
+
+.pigeon-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+/*    justify-content: center;*/
+    align-items: center;
+}
+
+.pigeon-header .title {
+	margin:5px;
+	font-weight: bold;
+	font-size: 35px;
+}
+.pigeon-footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.pigeon-footer .social-links a {
+	margin:10px;
+}
+.pigeon-footer .copy {
+	color:var(--pigeon-quote-color);
+	opacity:0.6;
+}
+
+.pigeon-footer div {
+	margin:5px;
+}
+.mail-text {
+	font-size: 12px;
+    opacity: 0.6;
+    margin-bottom: 25px;
+}
+/**
+ * ***********************************************************
+ * CONTENT 
+ * ***********************************************************
+ */
+.pigeon-content {
+    padding: 10px 20px 40px 20px;
+	box-shadow: 0 5px 45px #0000002e;
+	background: var(--pigeon-content-bg-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 500px;
+}
+.content-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+.pigeon-content .content-header-image{
+    height: 200px;
+    border-radius: 10px;
+}
+.content-header-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: var(--pigeon-bg-color);
+    text-align: center;
+}
+
+/**
+ * ***********************************************************
+ * INPUTS 
+ * ***********************************************************
+ */
+textarea, select, input {
+    padding: 0.7em 1em !important;
+    background: var(--pigeon-input-bg-color) !important;
+    border-radius: 15px !important;
+    border-width: 0 0 3px 0 !important;
+    border-color: var(--pigeon-input-border-color) !important;
+    width: 100% !important;
+    color: var(--pigeon-input-color) !important;
+}
+:focus-visible {
+	color: var(--pigeon-input-color-hover) !important;
+	outline: none !important;
+	border-color: var(--pigeon-theme-color) !important;
+}
+textarea {
+    font-family: helvetica;
+}
+/**
+ * checkboxes 
+ */
+input[type="checkbox"],
+input[type="radio"]{
+    width: fit-content !important;
+    margin: 5px 10px 5px 0px;
+}
+/**
+ * btns 
+ */
+input[type="button"],
+button,
+.pigeon-btn, 
+.button {
+  	padding: 10px 40px !important;
+	background-color: var(--pigeon-theme-color) !important;
+    border-radius: 20px !important;
+    color: white !important;
+	font-weight: bold;
+    border-width: 0 !important;
+}
+button[data-mautic-form-pagebreak-button="prev"],
+button[data-mautic-form-pagebreak-button="next"]{
+	background-color: var(--pigeon-btn-bg-color) !important;
+}
+button[data-mautic-form-pagebreak-button="next"]{
+	float: right;
+}
+/**
+ * ***********************************************************
+ * BLOCKQUOTES 
+ * ***********************************************************
+ */
+blockquote {
+  color: var(--pigeon-quote-color);
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: var(--pigeon-quote-color);
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.15em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+/**
+ * ***********************************************************
+ * IFRAMES 
+ * ***********************************************************
+ */
+iframe {
+	border-radius: 10px;
+}
+/**
+ * ***********************************************************
+ * IMAGES 
+ * ***********************************************************
+ */
+.pigeon-image {
+	border-radius: 10px;
+}
+/**
+ * ***********************************************************
+ * RESPONSIVE
+ * ***********************************************************
+ */
+@media only screen and (max-width: 600px) {
+	.pigeon-content,
+	.pigeon-header, 
+	.pigeon-footer {
+		width: 400px;
+	}
+	.pigeon-header .title {
+		font-size: 30px;
+	}
+	.pigeon-content .content-header-image{
+	    height: 150px;
+	}
+	.content-header-title{
+	    font-size: 20px;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.pigeon-content,
+	.pigeon-header, 
+	.pigeon-footer {
+		width: 300px;
+	}
+}
+@media only screen and (max-width: 300px) {
+	.pigeon-content,
+	.pigeon-header, 
+	.pigeon-footer {
+		width: 200px;
+	}
+}
+/*************************************************************/
+/*************************************************************/
+/*************************************************************/
+    </style>
+</head>
+<body>
+<div data-section-wrapper="1" class="">
+    <center>
+        <table data-section="1" style="width: 600;" width="600" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td>
+                    	<div class="row pigeon-header center">
+			  				<img src="{{getAssetUrl('themes/'~template~'/assets/logo.png')}}" alt="logo" height="50px" class="logo">
+		  					<span class="title">PigeonPosse</span>
+						</div>
+                    	<div class="row pigeon-content">
+				  			<div class="cell content-header">
+			  					<img src="{{getAssetUrl('themes/'~template~'/assets/mail-header.png')}}" alt="image header" height="50px" width="100%" class="content-header-image">
+			  				    <h1 class="content-header-title">{subject}</h1>
+				  			</div>
+				  			<div class="cell">
+                                <h2>Hello <i>Pigeon fancier</i> 👋</h2>
+                                <p>We haven't heard from you for a while...</p>
+                                <p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </p>
+                                </br>
+                                <a href="https://pigeonposse.com" class="button">Visit our web</a>
+				  			</div>
+						</div>
+                    	<div class="row pigeon-footer center">
+                            <div class="cell mail-text" data-slot="text">
+                                {unsubscribe_text} | {webview_text}
+                            </div>				  			
+				  			<div class="cell social-links">
+				  				<a href="https://pigeonposse.com" target="_blank">Web</a>
+				  				<a href="https://twitter.com/pigeonposse" target="_blank">Twitter</a>
+				  				<a href="https://github.com/PigeonPosse" target="_blank">Github</a>
+				  			</div>
+				  			<div class="cell copy">
+				  				copyright © 2022
+				  			</div>
+						</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+</div>
+</body>
+</html>
