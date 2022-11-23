@@ -62,13 +62,13 @@ Help us to develop more interesting things
 
 Read about the history of the project
 
-[Read more](https://github.com/PigeonPosse/mautic-theme/HISTORY.md)
+[Read more](https://github.com/PigeonPosse/mautic-theme/blob/main/HISTORY.md)
 
 ## 📜 License
 
 This sofware is licensed with GPLv3 (GNU GENERAL PUBLIC LICENSE Version 3)
 
-[Read more](https://github.com/PigeonPosse/mautic-theme/LICENSE)
+[Read more](https://github.com/PigeonPosse/mautic-theme/blob/main/LICENSE)
 
 ## 🐦 About us
 
@@ -84,8 +84,5 @@ PigeonPosse is a ✨ code development collective ✨ focused on creating practic
 
 <br>
 
-<div style="text-align: right">❤🧡💛💚💙💜❤🧡💛💚💙💜</div>
-
-<br>
 
 
