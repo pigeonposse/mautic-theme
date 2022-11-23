@@ -44,6 +44,27 @@ FOR 		PIGEONPOSSE.COM
 
 A theme for Mautic developed by PigeonPosse
 
+## 🔑 Installation
+
+### Manual
+1. Download or clone this project into your Mautic <code>/themes</code> folder.
+2. Clean your Mautic cache. There are two options to do that:
+	- Remove cache folder "prod":
+		```bash 
+		# For Mautic 3.x: 
+		rm -r {YourMauticDirectory}/var/cache/prod 
+		# For Mautic 2.x:
+		rm -r {YourMauticDirectory}/app/cache/prod
+		```
+	- Execute Mautic cache command: 
+		```bash
+		# For Mautic 3.x: 
+		php {YourMauticDirectory}/bin/console cache:clear
+		# For Mautic 2.x:
+		php {YourMauticDirectory}/app/console cache:clear
+		```
+3. You should now see the PigeonPosse theme in your list of themes.
+
 ## 👨‍💻 Development
 
 Info about mautic development
