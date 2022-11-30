@@ -6,6 +6,7 @@
 	"extra": {
 		"install-directory-name": "pigeonposse"
 	},
+	"version" : "1.0.0",
 	"authors": [
 		{
             "name": "PigeonPosse Team",

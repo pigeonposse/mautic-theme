@@ -9,10 +9,12 @@
     {% endif %}
 
     <div class="pigeon-content-form">
+
         {% if header is defined %}
         <h4>{{ header }}</h4>
         {% endif %}
         {{ content|raw }}
+        
     </div>
 
 {% endblock %}

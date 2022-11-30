@@ -1,6 +1,7 @@
 {% extends ":"~template~":base.html.twig" %}
 
 {% block content %}
+
 <div data-section-wrapper="1" class="">
     <center>
         <table data-section="1" style="width: 600;" width="600" cellpadding="0" cellspacing="0">
@@ -8,29 +9,45 @@
                 <tr>
                     <td>
                     	<div class="row pigeon-header center">
-			  				<img src="{{getAssetUrl('themes/'~template~'/assets/logo.png')}}" alt="logo" height="50px" class="logo">
-		  					<span class="title">PigeonPosse</span>
+			  				<img src="{{getAssetUrl('themes/'~template~'/assets/logo.png')}}" alt="logo" width="320px" class="logo">
 						</div>
                     	<div class="row pigeon-content">
 				  			<div class="cell">
                                 <h2>Hello <i>Pigeon fancier</i> 👋</h2>
-                                <br>
-                                We haven't heard from you for a while...
-                                <br>
+								<p>We haven't heard from you for a while...
+								</p>
+								<p>
+								  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								</p>
                                 <a href="https://pigeonposse.com" class="button">GO 👊</a>
 				  			</div>
-				  			<div class="cell">
-                                <script type="text/javascript" src="//localhost:8205/form/generate.js?id=1"></script>
-				  			</div>
+
 						</div>
                     	<div class="row pigeon-footer center">
-				  			<div class="cell social-links">
-				  				<a href="https://pigeonposse.com" target="_blank">Web</a>
-				  				<a href="https://twitter.com/pigeonposse" target="_blank">Twitter</a>
-				  				<a href="https://github.com/PigeonPosse" target="_blank">Github</a>
+                    		<div class="cell social-links">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tbody>
+									<tr>
+										<td style="align-content: center; width:10%;"></td>
+										<td style=""><a href="https://github.com/PigeonPosse/" target="_blank"><img height="auto" src="/themes/pigeonposse-theme-token/assets/social/github.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width: 20px;font-size:13px;margin: auto;" width="20" /> </a></td>
+										<td style=""><a href="https://twitter.com/pigeonposse_" target="_blank"><img height="auto" src="/themes/pigeonposse-theme-token/assets/social/twitter.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width: 20px;font-size:13px;margin: auto;" width="20" /> </a></td>
+										<td style=""><a href="https://www.instagram.com/pigeon.posse/?hl=es" target="_blank"><img height="auto" src="/themes/pigeonposse-theme-token/assets/social/instagram.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width: 20px;margin: auto;font-size:13px;" width="20" /> </a></td>
+										<td style="align-content: center; width:10%;"></td>
+									</tr>
+								</tbody>
+							</table>
+
+							</div>
+				  			<div class="cell web-links">
+								<p>
+									<a href="https://pigeonposse.com" style="color: #351f53; font-style: italic; text-decoration: none; margin: 0 10px; font-size:14px;" target="_blank">Web</a>
+									<a href="https://pigeonposse.com?popup=about" style="color: #351f53; font-style: italic; text-decoration: none; margin: 0 10px; font-size:14px;" target="_blank">About</a>
+									<a href="mailto:dev@pigeonposse.com" style="color: #351f53; font-style: italic; text-decoration: none; margin: 0 10px; font-size:14px;" target="_blank">Contact</a>
+									<a href="https://pigeonposse.com?popup=donate" style="color: #351f53; font-style: italic; text-decoration: none; margin: 0 10px; font-size:14px;" target="_blank">Donate</a>
+								</p>
 				  			</div>
 				  			<div class="cell copy">
-				  				copyright © 2022
+				  				<p style="font-size:13px;">copyright © 2022</p>
 				  			</div>
 						</div>
                     </td>
@@ -39,4 +56,6 @@
         </table>
     </center>
 </div>
+
 {% endblock %}
+
