@@ -8,7 +8,7 @@
         	<meta name="description" content="{pagemetadescription}">
         {% endif %}
         <!-- Pigeon theme styles -->
-        <link class="reea-styles" rel="stylesheet" type="text/css" href="{{getAssetUrl('themes/'~template~'/assets/styles.css')}}">
+        <link class="reea-styles" rel="stylesheet" type="text/css" href="{{getAssetUrl('themes/'~template~'/assets/styles.css', null, null, true) }}">
 
         <!-- stylesheets -->
         {% block stylesheets %}{% endblock %}

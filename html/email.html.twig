@@ -157,22 +157,42 @@
 	<!-- header -->
 	<mj-section>
 		<mj-column css-class="pigeon-header" vertical-align="middle">
-			<mj-image width="320px" src="{{ getAssetUrl('themes/'~template~'/assets/logo.png', null, null, true) }}" href="pigeonposse.com" target="_blank" css-class="logo" background-color="#351f53"/>
+			<mj-image 
+				width="320px" 
+				src="{{ getAssetUrl('themes/'~template~'/assets/logo.png', null, null, true) }}" 
+				href="https://pigeonposse.com" 
+				target="_blank" 
+				css-class="logo" 
+				background-color="#351f53" 
+				alt="Logo"
+				title="Logo"
+				/>
 		</mj-column>
 	</mj-section>
 	<!-- content -->
 	<mj-wrapper border-radius="10px" background-color="white" padding="0px" css-class="pigeon-content">
 	    <!-- content header -->
-	  <mj-section background-url="{{ getAssetUrl('themes/'~template~'/assets/mail-header.png', null, null, true) }}" background-size="cover" padding="60px 5px 60px 5px">
+	    <mj-section 
+	  		background-url="{{ getAssetUrl('themes/'~template~'/assets/mail-header.png', null, null, true) }}" 
+	  		background-size="cover" 
+	  		padding="60px 5px 60px 5px"
+	  		border-radius="10px 10px 0 0"
+	  		>
 		<mj-column>
-		  <mj-text font-family="Helvetica" font-size="16px" align="center" color="white" css-class="content-header-title">
-			<h1 style="line-height: 0;">{subject}
+			<mj-text 
+		  		font-family="Helvetica" 
+		  		font-size="16px" 
+		  		align="center" 
+		  		color="white" 
+		  		css-class="content-header-title"
+		  		>
+				<h1 style="line-height: 0;">{subject}
 			</h1>
 		  </mj-text>
 		</mj-column>
 	  </mj-section>
 	    <!-- content message -->
-	  <mj-section css-class="pigeon-content">
+	  <mj-section css-class="pigeon-content" border-radius="0 0 10px 10px">
 		<mj-column>
 		  <mj-text font-family="Helvetica" color="#111" font-size="18px" padding="5px 15px">
 			<h2 style="line-height:1px;padding: 0;margin: 0;">
@@ -203,6 +223,8 @@
 				href="https://github.com/PigeonPosse/"
 				target="_blank" 
 				padding="0 20px"
+				alt="Github"
+				title="Github"
 			>
 			</mj-social-element>
 			<mj-social-element 
@@ -211,6 +233,8 @@
 				href="https://twitter.com/pigeonposse_"
 				target="_blank" 
 				padding="0 20px"
+				alt="Twitter"
+				title="Twitter"
 			>
 			</mj-social-element>
 			<mj-social-element 
@@ -219,6 +243,8 @@
 				href="https://www.instagram.com/pigeon.posse/?hl=es"
 				target="_blank" 
 				padding="0 20px"
+				alt="Instagram"
+				title="Instagram"
 			>
 			</mj-social-element>
 		  </mj-social>
