@@ -157,13 +157,13 @@
 	<!-- header -->
 	<mj-section>
 		<mj-column css-class="pigeon-header" vertical-align="middle">
-			<mj-image width="320px" src="{{getAssetUrl('themes/'~template~'/assets/logo.png')}}" href="pigeonposse.com" target="_blank" css-class="logo" background-color="#351f53"/>
+			<mj-image width="320px" src="{{ getAssetUrl('themes/'~template~'/assets/logo.png', null, null, true) }}" href="pigeonposse.com" target="_blank" css-class="logo" background-color="#351f53"/>
 		</mj-column>
 	</mj-section>
 	<!-- content -->
 	<mj-wrapper border-radius="10px" background-color="white" padding="0px" css-class="pigeon-content">
 	    <!-- content header -->
-	  <mj-section background-url="{{getAssetUrl('themes/'~template~'/assets/mail-header.png')}}" background-size="cover" padding="60px 5px 60px 5px">
+	  <mj-section background-url="{{ getAssetUrl('themes/'~template~'/assets/mail-header.png', null, null, true) }}" background-size="cover" padding="60px 5px 60px 5px">
 		<mj-column>
 		  <mj-text font-family="Helvetica" font-size="16px" align="center" color="white" css-class="content-header-title">
 			<h1 style="line-height: 0;">{subject}
@@ -199,7 +199,7 @@
 		  <mj-social font-size="12px" icon-size="24px" mode="horizontal">
 			<mj-social-element
 				name="custom" 
-				src="{{getAssetUrl('themes/'~template~'/assets/social/github.png')}}" 
+				src="{{ getAssetUrl('themes/'~template~'/assets/social/github.png', null, null, true) }}" 
 				href="https://github.com/PigeonPosse/"
 				target="_blank" 
 				padding="0 20px"
@@ -207,7 +207,7 @@
 			</mj-social-element>
 			<mj-social-element 
 				name="custom" 
-				src="{{getAssetUrl('themes/'~template~'/assets/social/twitter.png')}}" 
+				src="{{ getAssetUrl('themes/'~template~'/assets/social/twitter.png', null, null, true) }}" 
 				href="https://twitter.com/pigeonposse_"
 				target="_blank" 
 				padding="0 20px"
@@ -215,7 +215,7 @@
 			</mj-social-element>
 			<mj-social-element 
 				name="custom" 
-				src="{{getAssetUrl('themes/'~template~'/assets/social/instagram.png')}}" 
+				src="{{ getAssetUrl('themes/'~template~'/assets/social/instagram.png', null, null, true) }}" 
 				href="https://www.instagram.com/pigeon.posse/?hl=es"
 				target="_blank" 
 				padding="0 20px"
