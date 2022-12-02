@@ -5,13 +5,13 @@
  */
 body {
     font-family: helvetica;
-    display: flex;
+/*    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-content: center;
+    align-content: center;*/
 /*    justify-content: center;*/
-    align-items: center;
-    text-align:center;
+/*    align-items: center;
+    text-align:center;*/
 	--pigeon-theme-color: #2866a6;
 	--pigeon-color: #111;
 	--pigeon-bg-color: #ffffff;
@@ -91,6 +91,11 @@ a {
  * CONTENT 
  * ***********************************************************
  */
+table.content {
+    width: 100% !important;
+    max-width: 600px;
+    margin: auto;
+}
 .pigeon-content {
 	padding: 20px;
 	box-shadow: 0 5px 45px #0000002e;
@@ -158,6 +163,7 @@ button,
     color: white !important;
 	font-weight: bold;
     border-width: 0 !important;
+    text-decoration:none !important;
 }
 button[data-mautic-form-pagebreak-button="prev"],
 button[data-mautic-form-pagebreak-button="next"]{
