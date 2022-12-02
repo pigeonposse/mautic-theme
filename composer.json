@@ -1,6 +1,6 @@
 {
 	"name": "pigeonposse/mautic-theme",
-	"description" : "A pigeonPosse theme for Mautic",
+	"description" : "A PigeonPosse theme for Mautic",
 	"type": "mautic-theme",
 	"keywords": [
 		"mautic",
@@ -9,7 +9,10 @@
 	"extra": {
 		"install-directory-name": "pigeonposse"
 	},
-	"version" : "1.0.0",
+	"require": {
+		"php": ">=7.4.0",
+		"mautic/core-lib": "^4.0"
+	},
 	"authors": [
 		{
             "name": "PigeonPosse Team",
@@ -27,8 +30,12 @@
 	"license": "GPL-3.0",
 	"funding": [
 		{
-			"type": "other",
+			"type": "GitHub",
 			"url": "https://github.com/sponsors/PigeonPosse"
+		},
+		{
+			"type": "Web",
+			"url": "https://pigeonposse.com/?popup=donate"
 		}
 	]
 }
