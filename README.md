@@ -37,7 +37,7 @@ FOR 	PIGEONPOSSE.COM
 
 -->
 
-# Mautic Theme by PIGEONPOSSE™
+# Mautic Theme by PIGEONPOSSE
 
 [![License](https://img.shields.io/github/license/PigeonPosse/mautic-theme?color=blue&label=License&style=flat-square)](https://packagist.org/packages/pigeonposse/mautic-theme)
 [![Version](https://img.shields.io/packagist/v/pigeonposse/mautic-theme?color=a1b858&label&style=flat-square)](https://packagist.org/packages/pigeonposse/mautic-theme)
