@@ -1,0 +1,16 @@
+###############################################################################
+# FOR PIGEONPOSSE USAGE
+###############################################################################
+
+web:
+  
+  - id: "mautic-theme"
+    name: Mautic theme
+    type: theme
+    subtype: mautic
+    version: "{{composer.version}}"
+    description: "✨📬 Mautic Theme by PIGEONPOSSE"
+    homepage: "https://packagist.org/packages/{{composer.name}}"
+    repo: "https://github.com/{{composer.name}}"
+
+###############################################################################
