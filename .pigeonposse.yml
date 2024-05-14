@@ -8,7 +8,7 @@ web:
     name: Mautic theme
     type: theme
     subtype: mautic
-    version: "{{composer.version}}"
+    version: ""
     description: "✨📬 Mautic Theme by PIGEONPOSSE"
     homepage: "https://packagist.org/packages/{{composer.name}}"
     logo: "https://raw.githubusercontent.com/pigeonposse/mautic-plugin-extra-tools/main/Assets/img/logo.png"
