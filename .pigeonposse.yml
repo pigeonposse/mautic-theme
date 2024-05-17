@@ -6,7 +6,8 @@ web:
   
   - id: "mautic-theme"
     name: Mautic theme
-    type: theme
+    type: 
+      - mautic-theme
     subtype: mautic
     version: "1.0.0"
     description: "✨📬 Mautic Theme by PIGEONPOSSE"
