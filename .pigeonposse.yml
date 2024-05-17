@@ -7,6 +7,7 @@ web:
   - id: "mautic-theme"
     name: Mautic theme
     type: 
+      - theme
       - mautic-theme
     subtype: mautic
     version: "1.0.0"
